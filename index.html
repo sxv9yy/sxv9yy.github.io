@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>sxv9yy</title>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>AZRI ANUAR</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<style>
+body {top: 0; left: 0; width: 99%; height: 97%;
+    position: absolute; display: table}
+  p {display: table-cell; vertical-align: middle; text-align: center}
+#timezone * {text-decoration: none;}
+
+}
+</style>
+<script type="text/javascript">
+    // declare time zone formatting
+    let options = {
+        timeZone: 'Asia/Kuala_Lumpur',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    },
+    formatter = new Intl.DateTimeFormat([], options);
+
+    // set time
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
+</script>
 </head>
-<body>
-<h1>Azri Anuar</h1>
-Check out my <a href="https://www.linkedin.com/in/azrianuar">LinkedIn</a> and <a href="https://github.com/sxv9yy">GitHub</a>. Thanks.
+
+
+<p>
+<font size="7"><i><b>AZRI ANUAR</b></i></font> <br>
+<br>
+<img src="images/0916f4b2-city-4723-1628829b6c4.jpg" style="width:560px;"><br>
+<br>
+<span id=timezone>
+<i>
+<a href="https://24timezones.com/world_directory/current_kuala_lumpur_time.php">TIME IN KUALA LUMPUR</a> - <span
+    id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/myt">MYT</a>
+</i>
+</span>
+<br><br>
+<a href="about.html">about</a> //
+<a href="projects.html">projects</a> //
+<a href="resume.pdf">resume</a> //
+<a href="links.html">links</a>
+<br>
+<br>
 </body>
 </html>
